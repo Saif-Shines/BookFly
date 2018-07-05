@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Get the path to the passwords file, then check
      * if the username and password provided match any logins in the file.
-     * @param view is the view of the main activity screen.
      */
     public void checkLogin(View view) {
         String fileName = "passwords.txt";
@@ -132,9 +131,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays an alert when called with the given title and message.
-     * @param title is the title of the alert.
-     * @param message is the message of the alert.
-     * @param activity is the activity object where this is called.
+     *  title is the title of the alert.
+     *  message is the message of the alert.
+     *  activity is the activity object where this is called.
      */
     public static void alert(String title, String message, Activity activity) {
         AlertDialog loginFailDialog =

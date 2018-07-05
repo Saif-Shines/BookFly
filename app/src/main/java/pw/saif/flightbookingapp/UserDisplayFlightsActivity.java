@@ -128,7 +128,6 @@ public class UserDisplayFlightsActivity extends AppCompatActivity {
      * If a client has selected an itinerary and has not booked it before
      * then this passes the itinerary into the intent and sends the
      * user to the display booked itinerary activity.
-     * @param view is the search itineraries view.
      */
     public void bookFlight(View view) {
             try {
@@ -184,7 +183,6 @@ public class UserDisplayFlightsActivity extends AppCompatActivity {
 
     /**
      * Sorts the items in the list view by cost.
-     * @param view is the search itineraries view.
      */
     public void sortByCost(View view) {
         try {
@@ -218,7 +216,6 @@ public class UserDisplayFlightsActivity extends AppCompatActivity {
 
     /**
      * Sorts the items in the list view by time.
-     * @param view is the search itineraries view.
      */
     public void sortByTime(View view) {
         try {

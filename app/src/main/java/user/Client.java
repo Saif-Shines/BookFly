@@ -50,7 +50,6 @@ public class Client extends User {
 
     /**
      * Returns the last name of this client.
-     * @return the last name of this client.
      */
     public String getLastName() {
         return lastName;
@@ -58,7 +57,6 @@ public class Client extends User {
 
     /**
      * Returns the first name of this client.
-     * @return the first name of this client.
      */
     public String getFirstName() {
         return firstName;
@@ -66,7 +64,7 @@ public class Client extends User {
 
     /**
      * Returns the email of this client.
-     * @return the email of this client.
+     * returns the email of this client.
      */
     public String getEmail() {
         return email;
@@ -74,7 +72,6 @@ public class Client extends User {
 
     /**
      * Returns the address of this client.
-     * @return the address of this client.
      */
     public String getAddress() {
         return address;
@@ -82,7 +79,6 @@ public class Client extends User {
 
     /**
      * Returns the credit card number of this client.
-     * @return the credit card number of this client.
      */
     public String getCreditCardNumber() {
         return creditCardNumber;
@@ -90,7 +86,6 @@ public class Client extends User {
 
     /**
      * Returns the expiry date of this credit card.
-     * @return the expiry date of this credit card.
      */
     public String getExpiryDate() {
         return expiryDate;
@@ -98,7 +93,6 @@ public class Client extends User {
     
     /**
      * Returns the itineraries that are booked for this client.
-     * @return the itineraries that are booked for this client.
      */
     public ArrayList<Itinerary> getBookedItineraries() {
 		return bookedItineraries;
@@ -107,9 +101,6 @@ public class Client extends User {
     /**
      * Determines whether the Itinerary object has been booked by this
      * client before.
-     * @param itinerary is the Itinerary object that will be booked.
-     * @return returns whether the Itinerary object has been booked
-     * by this client before.
      */
     public boolean itineraryAlreadyBooked(Itinerary itinerary) {
         for (Itinerary i : getBookedItineraries()) {
@@ -122,7 +113,7 @@ public class Client extends User {
 
     /**
      * Edits the information of the client.
-     * @param clientString is in the format of client.csv
+     * clientString is in the format of client.csv
      */
     public void editPersonalDetails(String clientString) {
         String[] client = clientString.split(",");
@@ -137,7 +128,6 @@ public class Client extends User {
 	
     /**
      * Returns a User if the user's email is in the system.
-     * @return the user associated to an email.
      */
     public User getClient()
             throws UserDoesNotExistException {
@@ -153,7 +143,6 @@ public class Client extends User {
     /**
      * Adds the selected itinerary to the clients Booked Itineraries
      * 			and decreases the number of seats of those flights by 1.
-     * @param itinerary is the list of itineraries searched.
      */
     public void bookSingleItinerary(Itinerary itinerary) {
 
@@ -167,7 +156,6 @@ public class Client extends User {
 
     /**
      * Returns a string representation of the User.
-     * @return string representation of the User.
      */
     @Override
     public String toString() {

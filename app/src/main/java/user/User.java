@@ -17,12 +17,12 @@ public abstract class User implements Serializable {
 
     /**
      * Enters a Client's personal and billing information into the system.
-     * @param lastName is the last name of the Client.
-     * @param firstNames is the first name of the Client.
-     * @param email is the email of the Client.
-     * @param address is the address of the Client.
-     * @param creditCardNumber is the credit card number of the Client.
-     * @param expiryDate is the expiry date of the clients credit card.
+     *  lastName is the last name of the Client.
+     *  firstNames is the first name of the Client.
+     *  email is the email of the Client.
+     *  address is the address of the Client.
+     *  creditCardNumber is the credit card number of the Client.
+     *  expiryDate is the expiry date of the clients credit card.
      */
     public static void enterPersonalAndBillingInfo(String lastName,
     		String firstNames, String email, String address,
@@ -36,8 +36,8 @@ public abstract class User implements Serializable {
 
     /**
      * Returns Flight objects in a string format.
-     * @param flights is an array list of Flight objects.
-     * @return a string of a Flight objects
+     *  flights is an array list of Flight objects.
+     * returns a string of a Flight objects
      */
     public static String flightsToString(
             ArrayList<Flight> flights) {
@@ -53,10 +53,10 @@ public abstract class User implements Serializable {
 
     /**
      * Returns an array list of direct flights.
-     * @param departureDate is the date and time at which a Flight leaves.
-     * @param origin is the original city that an itinerary departs from.
-     * @param destination is the final city that it lands in.
-     * @return an array list of all direct flights from the origin
+     *  departureDate is the date and time at which a Flight leaves.
+     *  origin is the original city that an itinerary departs from.
+     *  destination is the final city that it lands in.
+     * returns an array list of all direct flights from the origin
      * to the destination.
      */
     public static ArrayList<Flight> getDirectFlights(String departureDate,
@@ -74,10 +74,10 @@ public abstract class User implements Serializable {
 
     /**
      * Returns array list of bookable itineraries from SearchItinerary.
-     * @param departureDate is the date and time at which a Flight leaves.
-     * @param origin is the original city that an itinerary departs from.
-     * @param destination is the final city that it lands in.
-     * @return returns an array list of bookable
+     *  departureDate is the date and time at which a Flight leaves.
+     *  origin is the original city that an itinerary departs from.
+     *  destination is the final city that it lands in.
+     * returns returns an array list of bookable
      * itineraries from SearchItinerary.
      */
     public static ArrayList<Itinerary> getBookableItineraries(
@@ -95,9 +95,9 @@ public abstract class User implements Serializable {
 
     /**
      * Returns all of the itineraries connecting origin and destination.
-     * @param origin is the original city that an itinerary departs from.
-     * @param destination is the final city that it lands in.
-     * @return ArrayList<Itinerary> is a list of all the possible itineraries
+     *  origin is the original city that an itinerary departs from.
+     *  destination is the final city that it lands in.
+     * returns ArrayList<Itinerary> is a list of all the possible itineraries
      * that a user could take.
      */
     public static ArrayList<Itinerary> searchItinerary (String departureDate,
@@ -153,9 +153,9 @@ public abstract class User implements Serializable {
     /**
      * Helper function for allItineraries that returns the
      * itineraries from connecting flights
-     * @param origin is the original city that an itinerary departs from.
-     * @param destination is the final city that a lands in.
-     * @return ArrayList<Itinerary> that holds all the connections
+     *  origin is the original city that an itinerary departs from.
+     *  destination is the final city that a lands in.
+     * returns ArrayList<Itinerary> that holds all the connections
      * an itinerary will make
      */
     private static ArrayList<Itinerary> allConnections (String departureDate,
@@ -233,10 +233,10 @@ public abstract class User implements Serializable {
 
     /**
      * Returns true if there already exists a flight to that destination.
-     * @param destination is the final city that it lands in.
-     * @param flightPath is the Itinerary that has a
+     *  destination is the final city that it lands in.
+     *  flightPath is the Itinerary that has a
      * specified origin to a destination
-     * @return true if an itinerary has already been to a destination.
+     * returns true if an itinerary has already been to a destination.
      */
     private static boolean ifAlreadyBeen(String destination,
                                          Itinerary flightPath){
@@ -251,8 +251,8 @@ public abstract class User implements Serializable {
 
     /**
      * Returns list of Itineraries sorted by cost from least to greatest.
-     * @param itineraries is a list of Itineraries to be sorted.
-     * @return a copy of the list of Itineraries sorted by cost.
+     *  itineraries is a list of Itineraries to be sorted.
+     * returns a copy of the list of Itineraries sorted by cost.
      */
     public static ArrayList<Itinerary> sortItinerariesByCost(
             ArrayList<Itinerary> itineraries) {
@@ -269,8 +269,8 @@ public abstract class User implements Serializable {
     /**
      * Returns list of Itineraries sorted by travel time
      * from least to greatest.
-     * @param itineraries is a list of Itineraries to be sorted.
-     * @return a copy of the list of Itineraries sorted by time.
+     *  itineraries is a list of Itineraries to be sorted.
+     * returns a copy of the list of Itineraries sorted by time.
      */
     public static ArrayList<Itinerary> sortItinerariesByTravelTime(
             ArrayList<Itinerary> itineraries) {
@@ -286,9 +286,9 @@ public abstract class User implements Serializable {
 
     /**
      * Returns a String representation of the itineraries.
-     * @param itineraries is the list of all itineraries from flights returned
+     *  itineraries is the list of all itineraries from flights returned
      * from a search.
-     * @return a string representation of all the returned itineraries.
+     * returns a string representation of all the returned itineraries.
      */
     public static String itinerariesToString(
             ArrayList<Itinerary> itineraries) {
@@ -305,7 +305,7 @@ public abstract class User implements Serializable {
 
     /**
      * returns a string representation of the User.
-     * @return string representation of the User.
+     * returns string representation of the User.
      */
     public abstract String toString();
 }

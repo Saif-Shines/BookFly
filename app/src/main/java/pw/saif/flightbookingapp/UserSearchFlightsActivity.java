@@ -34,8 +34,6 @@ public class UserSearchFlightsActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -46,7 +44,6 @@ public class UserSearchFlightsActivity extends AppCompatActivity {
      *  Take the departure date, origin,
      *  and dstination provided by the user and bundle them
      *  into the intent, as well as if they want a direct flight or not.
-     * @param view is the search flights activity view.
      */
     public void searchFlights(View view) {
 

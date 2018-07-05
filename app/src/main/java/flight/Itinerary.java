@@ -46,7 +46,8 @@ public class Itinerary implements Serializable {
     /**
      * Returns how many flights are in this itinerary.
      *
-     * @return the number of flights in itinerary.
+     * I took this concept of Itinery's from this repo: https://github.com/seanjameshan/Flight-X
+     * .
      */
     public int size() {
         return flights.size();
@@ -55,7 +56,6 @@ public class Itinerary implements Serializable {
     /**
      * returns ArrayList of all the flights.
      *
-     * @return the flights in the Itinerary.
      */
     public ArrayList<Flight> getFlights() {
         return flights;
@@ -64,7 +64,6 @@ public class Itinerary implements Serializable {
     /**
      * Adds an individual flight to itinerary.
      *
-     * @param flight the flight to be added to this itinerary.
      */
     public void addIndividualFlight(Flight flight) {
         this.flights.add(flight);
@@ -73,8 +72,6 @@ public class Itinerary implements Serializable {
     /**
      * Returns all of the costs from each flight in an itinerary.
      *
-     * @param flights is an array list of flights that a user has selected.
-     * @return an array list of the total costs from each flight.
      */
     public ArrayList<Double> getCosts(ArrayList<Flight> flights) {
         ArrayList<Double> costs = new ArrayList<Double>();
@@ -88,9 +85,6 @@ public class Itinerary implements Serializable {
 
     /**
      * Calculates the total cost from all flights in this itinerary.
-     *
-     * @param arrayList is list of all costs from each flight in itinerary.
-     * @return the total of all the costs in this itinerary.
      */
     public double addTotalCost(ArrayList<Double> arrayList) {
         for (double cost : arrayList) {
@@ -104,8 +98,6 @@ public class Itinerary implements Serializable {
     /**
      * Returns a Flight at the specified index.
      *
-     * @param flightIndex is the index of a flight in the list of all Flights.
-     * @return the Flight that is currently at the specified index.
      */
     public Flight getFlightFromIndex(int flightIndex) {
         return this.flights.get(flightIndex);
@@ -113,8 +105,6 @@ public class Itinerary implements Serializable {
 
     /**
      * Adds the flights from another itinerary to the current itinerary.
-     *
-     * @param otherItinerary is an itinerary that contains one or more Flights.
      */
     public void mergeItineraries(Itinerary otherItinerary) {
         this.flights.addAll(otherItinerary.getFlights());
@@ -122,8 +112,6 @@ public class Itinerary implements Serializable {
 
     /**
      * Calculates the total cost from all flights in this itinerary.
-     *
-     * @return the total of all the costs in an itinerary.
      */
     public double getCreatedItineraryCost() {
         double returnCost = 0.00;
@@ -135,8 +123,6 @@ public class Itinerary implements Serializable {
 
     /**
      * Calculates the total travel time from all flights in this itinerary.
-     *
-     * @return the total travel time of all Flights in an itinerary.
      */
     public int getCreatedItineraryTime() {
         int returnTime = 0;
@@ -156,8 +142,6 @@ public class Itinerary implements Serializable {
 
     /**
      * Returns True if this itinerary is bookable.
-     *
-     * @return True if number of seats > 0 on all its flights.
      */
     public boolean ifBookable() {
         for (Flight currFlight : this.flights) {
@@ -191,7 +175,6 @@ public class Itinerary implements Serializable {
 
     /**
      * returns a string representation of the Itinerary.
-     * @return string representation of the Itinerary.
      */
     @Override
     public String toString() {

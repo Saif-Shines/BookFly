@@ -41,7 +41,7 @@ public class Database implements Serializable{
 
     /**
      * Sets the database as a singleton.
-     * @return an instance of the database
+     * returns an instance of the database
      */
     public static Database getInstance( ) {
         return database;
@@ -49,7 +49,7 @@ public class Database implements Serializable{
 
     /**
      * Retrieve all the flights from the database.
-     * @return an Array List that will hold all Flight objects in the system.
+     * returns an Array List that will hold all Flight objects in the system.
      */
     public ArrayList<Flight> getFlights() {
         return this.flights;
@@ -57,7 +57,7 @@ public class Database implements Serializable{
 
     /**
      * Set the flights to the database.
-     * @param flights is an array list of Flight objects.
+     *  flights is an array list of Flight objects.
      */
     public void setFlights(ArrayList<Flight> flights) {
         this.flights = flights;
@@ -66,7 +66,7 @@ public class Database implements Serializable{
 
     /**
      * Sets the map of emails to User objects to an updated map.
-     * @param users is the map of User objects to be set.
+     *  users is the map of User objects to be set.
      */
     public void setUsers(Map<String, User> users) {
         this.users = users;
@@ -74,7 +74,7 @@ public class Database implements Serializable{
 
     /**
      * Returns map of User's.
-     * @return the map that holds all of the User objects in the system.
+     * returns the map that holds all of the User objects in the system.
      * that are associated using a unique email address.
      */
     public Map<String, User> getUsers() {
@@ -83,8 +83,8 @@ public class Database implements Serializable{
 
     /**
      * Adds a user object to the map of all Users.
-     * @param email is the unique email address of a user.
-     * @param user is a User object.
+     *  email is the unique email address of a user.
+     *  user is a User object.
      */
     public void addUser(String email, User user) {
         this.users.put(email, user);
@@ -92,7 +92,7 @@ public class Database implements Serializable{
 
     /**
      * Adds a Flight object to the array list of all Flights.
-     * @param flight is a Flight object.
+     *  flight is a Flight object.
      */
     public void addFlight(Flight flight) {
     	int indexOfDuplicate = Database.getInstance().
@@ -120,8 +120,8 @@ public class Database implements Serializable{
 
     /**
      * Returns index of flight in arrayList
-     * @param flight is the Flight object to be indexed.
-     * @return int for index of flightNum in array or -1 if doesn't exist
+     *  flight is the Flight object to be indexed.
+     * returns int for index of flightNum in array or -1 if doesn't exist
      */
     private int getIndexInArrayOfFlight(Flight flight){
         for(int i = 0; i < Database.getInstance().getFlights().size(); i++){
@@ -135,8 +135,8 @@ public class Database implements Serializable{
 
     /**
      * Returns duplicate flight in arraylist.
-     * @param index is the index of the Flight in Flights ArrayList.
-     * @return the Flight object at that index in the Flights ArrayList.
+     *  index is the index of the Flight in Flights ArrayList.
+     * returns the Flight object at that index in the Flights ArrayList.
      */
     private Flight getDuplicateFlightInArrayList(int index){
     	return Database.getInstance().flights.get(index);
@@ -144,8 +144,8 @@ public class Database implements Serializable{
 
     /**
      * Returns index of flight in locations map.
-     * @param flight
-     * @return
+     *  flight
+     * returns
      */
     private int getIndexInMapOfFlight(Flight flight){
         Itinerary allFlightsFromOrigin = Database.getInstance().
@@ -161,7 +161,7 @@ public class Database implements Serializable{
 
     /**
      * Removes flight from locations map of all destinations
-     * @param flight is the flight the potential duplicate flight.
+     *  flight is the flight the potential duplicate flight.
      */
     private void removeDuplicateFlightFromMap(Flight flight){
         int indexToRemove = Database.getInstance().
@@ -177,7 +177,7 @@ public class Database implements Serializable{
     /**
      * Returns the locations map that consists of origin as key
      * and array list of flights as values.
-     * @return a map of all the itineraries associated with a location.
+     * returns a map of all the itineraries associated with a location.
      */
     public  Map<String, Itinerary> getLocations(){
         return this.locations;
@@ -185,7 +185,7 @@ public class Database implements Serializable{
 
     /*
      * Sets the map of origins to Itinerary objects to an updated map.
-     * @param locations is the Map of locations to be set.
+     *  locations is the Map of locations to be set.
      */
     public void setLocations(Map<String,Itinerary> locations) {
         this.locations = locations;
@@ -193,8 +193,8 @@ public class Database implements Serializable{
 
     /**
      * Returns an Itinerary of flights from the original city.
-     * @param origin is the original city that a Flight leaves from.
-     * @return an Itinerary of flights from the original city.
+     *  origin is the original city that a Flight leaves from.
+     * returns an Itinerary of flights from the original city.
      */
     public Itinerary getFlightsFromOrigin(String origin){
         return this.locations.get(origin);
@@ -202,9 +202,9 @@ public class Database implements Serializable{
 
     /**
      * Returns the arrival or departure times as a date object.
-     * @param dateTime is the String format of the flights
+     *  dateTime is the String format of the flights
      * 				arrival or departure date.
-     * @return a date object representing the flights
+     * returns a date object representing the flights
      * 				arrival or departure date.
      */
     public static Date getDateTime(String dateTime) {
@@ -222,9 +222,9 @@ public class Database implements Serializable{
 
     /**
      * Returns the arrival or departure times as a date object.
-     * @param date is the String format of the flights
+     *  date is the String format of the flights
      * 				arrival or departure date.
-     * @return a date object representing the flights
+     * returns a date object representing the flights
      * 				arrival or departure date.
      */
     public static Date getDate(String date) {
@@ -242,10 +242,10 @@ public class Database implements Serializable{
 
     /**
      * Returns an Itinerary of flights from origin after departure date
-     * @param origin is the original city that a Flight leaves from.
-     * @param departureDateString 
+     *  origin is the original city that a Flight leaves from.
+     *  departureDateString
      * 				is the date and time that a Flight leaves a city.
-     * @return an itinerary of Flights from the origin
+     * returns an itinerary of Flights from the origin
      * after the departure date.
      */
     public Itinerary getFlightsFromOriginAfterDate(
@@ -268,8 +268,8 @@ public class Database implements Serializable{
 
     /**
      * Returns if any flights are departing from original city.
-     * @param origin is the original city that a Flight leaves from.
-     * @return whether any flights are departing from the original city.
+     *  origin is the original city that a Flight leaves from.
+     * returns whether any flights are departing from the original city.
      */
     public boolean ifFlightsFromOrigin(String origin){
         return this.locations.containsKey(origin);

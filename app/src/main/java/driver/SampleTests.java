@@ -8,7 +8,8 @@ import org.junit.Test;
 
 public class SampleTests {
 
-  // NOTE: set the PATH variable to the location of the input csv files.
+  // NOTE: set the PATH variable to the location of the input csv files. This is important because we are loading the static data and we
+  // are note getting it from API
   public static final String PATH = "E:\\Udacity\\Android Nanodegree\\Read and Learn Adroid Projects\\Flight-Booking-App";
   public static final String CLIENTS = PATH + "clients.txt";
   public static final String FLIGHTS1 = PATH + "flights1.txt";
@@ -46,7 +47,9 @@ public class SampleTests {
 
   @Test(timeout = TIMEOUT)
   public void testGetItineraries() throws Exception {
-    
+    /**
+     * Here we test and upload some data to few of the files.*/
+
     Driver.uploadFlightInfo(FLIGHTS2);
     
     String expected = 

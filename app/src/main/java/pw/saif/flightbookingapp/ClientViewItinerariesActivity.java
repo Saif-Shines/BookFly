@@ -59,7 +59,6 @@ public class ClientViewItinerariesActivity extends AppCompatActivity {
     /**
      * Returns the user to the client main activity
      * and home screen with their login type and username.
-     * @param view the view of the clients booked itineraries.
      */
     public void returnHome(View view) {
         Intent intent = new Intent(this, ClientMainActivity.class);

@@ -9,7 +9,7 @@ public class UserDoesNotExistException extends Exception {
 
     /**
      * Raises an exception if a User is not in the Database, with a message.
-     * @param message is the message to be outputted.
+     *  message is the message to be outputted.
      */
     public UserDoesNotExistException(String message) {
         super(message);

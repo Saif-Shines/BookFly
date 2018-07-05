@@ -54,7 +54,6 @@ public class UserDisplayClientInfoActivity extends AppCompatActivity {
     /**
      *  Returns the user to the client home page,
      *  and keeps track of login type.
-     * @param view the edited client display view.
      */
     public void returnHome(View view) {
         Intent intent = new Intent(this, ClientMainActivity.class);

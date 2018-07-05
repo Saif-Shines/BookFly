@@ -44,8 +44,6 @@ public class AdminUploadClientsActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -55,7 +53,6 @@ public class AdminUploadClientsActivity extends AppCompatActivity {
     /**
      * Upload the clients to the database,
      * and then serialize the database to make sure it persists.
-     * @param view is the view of the client upload flights activity.
      */
     public void uploadClientsFileButton(View view) {
         try {

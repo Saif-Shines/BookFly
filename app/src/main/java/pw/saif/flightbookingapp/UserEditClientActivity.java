@@ -90,8 +90,6 @@ public class UserEditClientActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -101,8 +99,6 @@ public class UserEditClientActivity extends AppCompatActivity {
     /**
      * A string combining all the inputs of a user for the personal
      * information they want changed.
-     * @return a string representing the information that a user
-     * wants to change to.
      */
     public String createClientString() {
         return last_name.getText().toString() + "," +
@@ -117,7 +113,6 @@ public class UserEditClientActivity extends AppCompatActivity {
      *  Enters the new client details into the system to be saved,
      *  and pushes them to an activity
      *  where they can see their changes. Includes their email and login type.
-     * @param view is the view of the edit client activity.
      */
     public void submitEditFlightRequest(View view) {
         Intent intent = new Intent(this, UserDisplayClientInfoActivity.class);

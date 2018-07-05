@@ -49,7 +49,7 @@ public class Admin extends User {
     /**
      * Takes the information from the given CSV file and enters it as
      * Users objects into the system.
-     * @param file is an CSV file that holds the details of one or more
+     *  file is an CSV file that holds the details of one or more
      * Users to be entered into the system.
      */
     public static void uploadUserFile(String file) throws IOException {
@@ -68,7 +68,7 @@ public class Admin extends User {
     /**
      * Takes the information from the given CSV file and enters it as
      * Flight objects into the system.
-     * @param file is an CSV file that holds the details of one or more
+     *  file is an CSV file that holds the details of one or more
      * Flights to be entered into the system.
      */
     public static void uploadFlightFile(String file)
@@ -92,8 +92,8 @@ public class Admin extends User {
 
     /**
      * Returns a User if the User's email is in the system.
-     * @param email is the unique email linked to a specific user.
-     * @return the user associated to an email.
+     *  email is the unique email linked to a specific user.
+     * returns the user associated to an email.
      */
     public static User getClient(String email)
             throws UserDoesNotExistException {
@@ -109,13 +109,13 @@ public class Admin extends User {
 
     /**
      * Creates a Flight object with the given parameters.
-     * @param flightNum is a unique ID to distinguish it from other Flights.
-     * @param departureDateTime is the date and time at which a Flight leaves.
-     * @param arrivalDateTime is the date and time at which a Flight arrives.
-     * @param airline is the airline that a Flight is owned by.
-     * @param origin is the original city that a Flight leaves from.
-     * @param destination is the original city that a Flight arrives at.
-     * @param d is the total cost of the Flight
+     *  flightNum is a unique ID to distinguish it from other Flights.
+     *  departureDateTime is the date and time at which a Flight leaves.
+     *  arrivalDateTime is the date and time at which a Flight arrives.
+     *  airline is the airline that a Flight is owned by.
+     *  origin is the original city that a Flight leaves from.
+     *  destination is the original city that a Flight arrives at.
+     *  d is the total cost of the Flight
      * @throws FlightAlreadyExistsException is an exception that handles when
      * a flight is entered with an flight number that has already been used.
      */
@@ -135,7 +135,7 @@ public class Admin extends User {
 
     /**
      * returns a string representation of the User.
-     * @return string representation of the User.
+     * returns string representation of the User.
      */
     @Override
     public String toString() {

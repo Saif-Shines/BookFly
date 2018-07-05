@@ -29,8 +29,6 @@ public class AdminSearchFlightActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -40,7 +38,6 @@ public class AdminSearchFlightActivity extends AppCompatActivity {
     /**
      * If the flight number inputted is in the
      * database start the edit flight activity.
-     * @param view is the view of the search flights activity.
      */
     public void submitSearchFlightRequest(View view) {
 

@@ -24,7 +24,6 @@ public class AdminMainActivity extends AppCompatActivity {
 
     /**
      * Sends the user to the upload flights activity.
-     * @param view is the view of the Admin home page activity.
      */
     public void uploadFlightsButton(View view) {
         Intent intent = new Intent(this, AdminUploadFlightsActivity.class);
@@ -33,7 +32,6 @@ public class AdminMainActivity extends AppCompatActivity {
 
     /**
      * Sends the user to the upload clients activity.
-     * @param view is the view of the Admin home page activity.
      */
     public void uploadClientsButton(View view) {
         Intent intent = new Intent(this, AdminUploadClientsActivity.class);
@@ -42,7 +40,6 @@ public class AdminMainActivity extends AppCompatActivity {
 
     /**
      * Sends the user to the search and edit flights activity.
-     * @param view is the view of the Admin home page activity.
      */
     public void editFlightsButton(View view) {
         Intent intent = new Intent(this, AdminSearchFlightActivity.class);
@@ -51,7 +48,6 @@ public class AdminMainActivity extends AppCompatActivity {
 
     /**
      * Sends the user to the search clients activity.
-     * @param view is the view of the Admin home page activity.
      */
     public void searchClientButton(View view) {
         Intent intent = new Intent(this, AdminSearchClientActivity.class);
@@ -61,7 +57,6 @@ public class AdminMainActivity extends AppCompatActivity {
 
     /**
      * Sends the user to main activity and logs them out.
-     * @param view is the view of the Admin home page activity.
      */
     public void logout(View view) {
         Intent intent = new Intent(this, MainActivity.class);

@@ -2,6 +2,7 @@ package flight;
 
 /**
  * A class that raises an exception if a Flight is already in the Database.
+ * Referece: https://developer.android.com/reference/java/lang/Exception go in samples section
  */
 public class FlightAlreadyExistsException extends Exception {
 

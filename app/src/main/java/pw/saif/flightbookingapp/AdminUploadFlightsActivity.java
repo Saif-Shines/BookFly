@@ -45,8 +45,6 @@ public class AdminUploadFlightsActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -55,8 +53,6 @@ public class AdminUploadFlightsActivity extends AppCompatActivity {
 
     /**
      * Upload the flights to the database,
-     * and then serialize the database to make sure it persists.
-     * @param view is the view of the Admin upload flights activity.
      */
     public void uploadFlightsFileButton(View view) {
 
@@ -64,9 +60,6 @@ public class AdminUploadFlightsActivity extends AppCompatActivity {
             EditText text = (EditText)findViewById(R.id.flightUri);
             String value = text.getText().toString();
             File file = new File(filePath, value);
-
-            // upload the flights and send an
-            // alert to signal success or failure.
             Admin.uploadFlightFile(file.toString());
 
             AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(this);

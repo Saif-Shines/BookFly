@@ -48,7 +48,6 @@ public class AdminDisplayFlightInfoActivity extends AppCompatActivity {
     /**
      * Returns the user to the Admin main activity
      * and home screen with their login type and username.
-     * @param view the view of the display new flight info.
      */
     public void returnHome(View view) {
     Intent intent = new Intent(this, AdminMainActivity.class);

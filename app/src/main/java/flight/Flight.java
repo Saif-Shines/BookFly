@@ -57,82 +57,44 @@ public class Flight implements Serializable{
         this.numSeats = numOfSeats;
     }
 
-    /**
-     * Returns the cost of the flight.
-     * @return the cost of this Flight.
-     */
+    // Getting the cost from the flight
     public double getCost() {
         return cost;
     }
 
-    /**
-     * Returns the flight number of the flight.
-     * @return the unique flight number of this Flight.
-     */
     public String getFlightNum() {
         return flightNum;
     }
 
-    /**
-     * Returns the airline of the flight.
-     * @return the airline that this Flight is registered to.
-     */
+
     public String getAirline() {
         return airline;
     }
 
-    /**
-     * Returns the departure date and time of the flight.
-     * @return departure date and time for this Flight.
-     */
+
     public String getDepartureDateTime() {
         return departureDateTime;
     }
 
-    /**
-     * Returns the arrival date and time of the flight.
-     * @return arrival date and time for this Flight.
-     */
+
     public String getArrivalDateTime() {
         return arrivalDateTime;
     }
 
-    /**
-     * Returns the origin of the flight.
-     * @return the origin of this Flight.
-     */
     public String getOrigin() {
         return origin;
     }
 
-    /**
-     * Returns the destination of the flight. 
-     * @return the destination of this Flight.
-     */
     public String getDestination() {
         return destination;
     }
 
-    /**
-     * Returns the number of seats available for the flight.
-     * @return the number of seats for this Flight.
-     */
     public int getNumSeats() { return numSeats; }
 
-    /**
-     * Decreases the number of seats by 1.
-     */
     public void bookedSeat() {
 		this.numSeats = getNumSeats() - 1;
 	}
 
-	/**
-     * Return the total time in minutes that a user is
-     * stopped over in an itinerary.
-     * @param difference is the total length of time that a
-     * flight is stopped over in a city.
-     * @return the total time in minutes of the stop over.
-     */
     public int calculateTime(long difference) {
 
         long minutes = (difference / (1000*60) % 60);
@@ -145,7 +107,7 @@ public class Flight implements Serializable{
     /**
      * Calculates the number of hours of travel time for this single Flight 
      * using two Date objects from a Flights arrival and departure.
-     * @return the number of hours of travel time for a single Flight.
+     * the number of hours of travel time for a single Flight.
      */
     public int getTravelTime() {
 
@@ -159,8 +121,6 @@ public class Flight implements Serializable{
     /**
      * Returns if flight arrival year is the same as depart 
      * year of connecting flight
-     * @return true if flight arrival year is the same as depart 
-     * year of connecting flight
      */
     public boolean sameYear(Flight connection){
     	String flightArrivalYear = this.getArrivalDateTime().substring(0, 4);
@@ -171,9 +131,6 @@ public class Flight implements Serializable{
     
     /**
      * Gives a Date object in String format.
-     * @param dateTime is the String format of the flights arrival or
-     * departure date.
-     * @return date object representing the flights arrival or departure date.
      */
     public Date getDateTime(String dateTime) {
         SimpleDateFormat simpleDateFormat
@@ -190,8 +147,7 @@ public class Flight implements Serializable{
 
     /**
      * Calculates the number of minutes between these two flights.
-     * Returns the number of minutes in the stopover between flights.
-     * @return number of minutes between arrival and departure time.
+     * Returns the number of minutes in the stopover between flights..
      */
     public int getStopOverTime(Flight other) {
 
@@ -205,8 +161,6 @@ public class Flight implements Serializable{
 
     /**
      * Returns true if the connecting flights stopover is not greater than 6h.
-     * @return true if the difference of arrival and departure time
-     * is greater than 0 hours and not greater than 6 hours
      */
     public boolean getStopOver(Flight other) {
         long total = getStopOverTime(other);
@@ -216,8 +170,6 @@ public class Flight implements Serializable{
 
     /**
      * Edits the information of a Flight object and stores in the database.
-     * @param flight is the new flight information that will overwrite the
-     * old flight information.
      */
     public void editFlight(String flight) {
         String[] flightString = flight.split(",");

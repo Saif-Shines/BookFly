@@ -92,8 +92,6 @@ public class AdminEditFlightActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -103,8 +101,6 @@ public class AdminEditFlightActivity extends AppCompatActivity {
     /**
      * A string combining all the inputs of a
      * flight that the admin is changing.
-     * @return a string representing the
-     * information that a flight is changing to.
      */
     public String createFlightString() {
         return flight_departure.getText().toString() + "," +
@@ -118,8 +114,6 @@ public class AdminEditFlightActivity extends AppCompatActivity {
 
     /**
      *  Enters the new flight details into the system to be saved,
-     *  and pushes them to an activity where the admin can see the changes.
-     * @param view is the view of the edit flight activity.
      */
     public void submitEditFlightRequest(View view) {
         Intent intent = new Intent(this, AdminDisplayFlightInfoActivity.class);

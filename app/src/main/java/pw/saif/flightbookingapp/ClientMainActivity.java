@@ -51,7 +51,6 @@ public class ClientMainActivity extends AppCompatActivity {
     /**
      * Sends user to the edit personal information activity
      * with their email and user type.
-     * @param view the view of the clients main activity and home screen.
      */
     public void editClientInfo(View view) {
         Intent intent = new Intent(this, UserEditClientActivity.class);
@@ -63,7 +62,6 @@ public class ClientMainActivity extends AppCompatActivity {
     /**
      * Sends user to the search flights activity
      * with their email and user type.
-     * @param view the view of the clients main activity and home screen.
      */
     public void searchFlights(View view) {
         Intent intent = new Intent(this, UserSearchFlightsActivity.class);
@@ -75,7 +73,7 @@ public class ClientMainActivity extends AppCompatActivity {
     /**
      * Sends user to view their booked itineraries
      * activity with their email and user type.
-     * @param view the view of the clients main activity and home screen.
+     *  view the view of the clients main activity and home screen.
      */
     public void viewBookedItineraries(View view) {
         Intent intent = new Intent(this, ClientViewItinerariesActivity.class);
@@ -87,7 +85,6 @@ public class ClientMainActivity extends AppCompatActivity {
     /**
      * Returns the user to the client main activity
      * and home screen if they are a client.
-     * @param view the view of the clients main activity and home screen.
      */
     public void logout(View view) {
         Intent intent = new Intent(this, MainActivity.class);
@@ -97,7 +94,6 @@ public class ClientMainActivity extends AppCompatActivity {
     /**
      * Returns the user to the Amdin main activity
      * and home screen if they are an admin.
-     * @param view the view of the clients main activity and home screen.
      */
     public void returnToAdmin(View view) {
         Intent intent = new Intent(this, AdminMainActivity.class);

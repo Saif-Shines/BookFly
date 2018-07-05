@@ -55,7 +55,6 @@ public class UserBookItineraryActivity extends AppCompatActivity{
 
     /**
      * Books the itinerary that the user selected and saves the database.
-     * @param itinerary is the Itinerary object that the user selected.
      */
     private void bookItinerary(Itinerary itinerary) {
         Client client = null;
@@ -72,7 +71,6 @@ public class UserBookItineraryActivity extends AppCompatActivity{
     /**
      *  Returns the user to the client home page,
      *  and keeps track of login type.
-     * @param view the edited client display view.
      */
     public void returnHome(View view) {
         Intent intent = new Intent(this, ClientMainActivity.class);

@@ -33,8 +33,6 @@ public class AdminSearchClientActivity extends AppCompatActivity {
 
     /**
      * Returns the user to the previous screen.
-     * @param item is the menu item that lets a user go back a page.
-     * @return if the back button was pressed.
      */
     public boolean onOptionsItemSelected(MenuItem item) {
         onBackPressed();
@@ -45,7 +43,6 @@ public class AdminSearchClientActivity extends AppCompatActivity {
      * Gets the inputted email and if it exists in the database
      * sends the admin to the client main activity with the clients email
      * so they can edit and view details specific to that client.
-     * @param view is the view of the admin searching client activity.
      */
     public void submitSearchClientRequest(View view) {
 
