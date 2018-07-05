@@ -25,7 +25,7 @@ In between the code I've give the links to the resources which I've referred to 
 
 Here is a apk file which is generated:(https://github.com/Saif-Shines/BookFly/blob/master/app-debug.apk) 
 
-Note: Due to time limitations, There in validation for date or no spinner views. One of the Bug observed is if there are more characters given into date field (Strictly YYYY-MM-DD), The app is likely to be crashing.
+Note: Due to time limitations which we had less that 2 days, I couldn't do validation for date or no spinner views. One of the Bug observed is if there are more characters given into date field (Strictly YYYY-MM-DD), The app is likely to be crashing.
 
 # The Execution Flow
 
@@ -44,7 +44,12 @@ I've used _Serialize_ to make it simpler for the database.
 
 1. https://github.com/Saif-Shines/BookFly/tree/master/app/src/main/java/system
 
-
+# Things that I could improve along with time.
+This could be implemented if we have had more time.
+1. Material Design.
+2. Validation of Numbers/strings.
+3. Architecture principles by Uncle Bob.
+4. Populating Custom ListView using FlightSearch API. (Thought it's JSON)
 
 # Step by Step Commit History
 
