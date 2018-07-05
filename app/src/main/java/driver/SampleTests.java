@@ -9,7 +9,7 @@ import org.junit.Test;
 public class SampleTests {
 
   // NOTE: set the PATH variable to the location of the input csv files.
-  public static final String PATH = "/Users/axelsteingrimsson/Documents/workspace/group_0715/pII/sampleTests/";
+  public static final String PATH = "E:\\Udacity\\Android Nanodegree\\Read and Learn Adroid Projects\\Flight-Booking-App";
   public static final String CLIENTS = PATH + "clients.txt";
   public static final String FLIGHTS1 = PATH + "flights1.txt";
   public static final String FLIGHTS2 = PATH + "flights2.txt";
