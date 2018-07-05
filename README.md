@@ -36,12 +36,20 @@ Note: Due to time limitations, There in validation for date or no spinner views.
 
 ![nw2](https://user-images.githubusercontent.com/17451294/42312793-d5d1b5e8-805e-11e8-9b5f-f3ee6b33d05f.jpg)
 
+# Database Scripts
+
+I've used _Serialize_ to make it simpler for the database.
+
+1. https://github.com/Saif-Shines/BookFly/tree/master/app/src/main/java/system
+
+
+
 # Step by Step Commit History
 
 This repository has direct one branch of the code and the work flow. Before coming to this branch finally, I had to work on multiple ways dealing with App to run smooth with Android System for the App to sustain.Here I have every single time to time commit according the differect objects, Adaptors, SQLiteDatabase, DBHelper, Cursors and view validation objects like spinner and date selection calender view.
 
 You can see the project with 7 branches and 107 commits here at https://github.com/Saif-Shines/FlightBookingSystem-OD
-
+Database Management: https://github.com/Saif-Shines/FlightBookingSystem-OD/tree/database/app/src/main/java/com/example/saif/flightsearchapplication
 
 
 
