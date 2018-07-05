@@ -1,5 +1,7 @@
 # BookFly
 Assignment given to create a Flight Bookings and display. This is a Android Application. It takes in the from and to data from the user and then searches for the flights available to book. The Person's details will be inserted into the database. Additionally, it has a login screen for the Admin or the User to login. Admin has the previlige to add the flights and client info from his admin panel and User can book a flight.
+
+In between the code I've give the links to the resources which I've referred to build this application.
  		
 
 ##Screenshots	
