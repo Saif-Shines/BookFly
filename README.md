@@ -36,4 +36,12 @@ Note: Due to time limitations, There in validation for date or no spinner views.
 
 ![nw2](https://user-images.githubusercontent.com/17451294/42312793-d5d1b5e8-805e-11e8-9b5f-f3ee6b33d05f.jpg)
 
+# Step by Step Commit History
+
+This repository has direct one branch of the code and the work flow. Before coming to this branch finally, I had to work on multiple ways dealing with App to run smooth with Android System for the App to sustain.Here I have every single time to time commit according the differect objects, Adaptors, SQLiteDatabase, DBHelper, Cursors and view validation objects like spinner and date selection calender view.
+
+You can see the project with 7 branches and 107 commits here at https://github.com/Saif-Shines/FlightBookingSystem-OD
+
+
+
 
