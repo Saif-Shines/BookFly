@@ -1,4 +1,4 @@
-package pw.tayyab.flightbookingapp;
+package pw.saif.flightbookingapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

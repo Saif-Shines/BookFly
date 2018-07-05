@@ -1,4 +1,4 @@
-package pw.tayyab.flightbookingapp;
+package pw.saif.flightbookingapp;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 import flight.Flight;
 import flight.Itinerary;
+import pw.saif.flightbookingapp.MainActivity;
+import pw.saif.flightbookingapp.R;
 import user.Admin;
 import user.Client;
 import user.User;
@@ -49,8 +51,7 @@ public class UserDisplayFlightsActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         // Get flight parameters.
-        String departure_date = intent.getExtras().getString("departure_date")
-                .substring(0, 10);
+        String departure_date = intent.getExtras().getString("departure_date");
         String origin = intent.getExtras().getString("origin");
         String destination = intent.getExtras().getString("destination");
         String is_direct_flight = intent.getStringExtra("is_direct_flight");
@@ -155,20 +156,20 @@ public class UserDisplayFlightsActivity extends AppCompatActivity {
                 }
 
                 if (client.itineraryAlreadyBooked(selectedItinerary)) {
-                    MainActivity.alert("Failed",
+                    pw.saif.flightbookingapp.MainActivity.alert("Failed",
                             "Client has already booked this Flight, " +
                             "please select another Flight.",
                             this);
                 }
 
                 else if ((flight == null) && (selectedItinerary == null)) {
-                    MainActivity.alert("Failed",
+                    pw.saif.flightbookingapp.MainActivity.alert("Failed",
                             "Please select a Flight.",
                             this);
                 }
                 if (selectedItinerary != null) {
                     Intent intent = new Intent(this,
-                            UserBookItineraryActivity.class);
+                            pw.saif.flightbookingapp.UserBookItineraryActivity.class);
                     intent.putExtra("itinerary", selectedItinerary);
                     intent.putExtra(getString(R.string.user_authority),
                             user);

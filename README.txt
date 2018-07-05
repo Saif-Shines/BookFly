@@ -25,7 +25,7 @@ These files need to go onto the devices storage (SD card) which is located at mn
 
 Note: The files need to be in the sdcard folder and not inside a folder inside the sdcard, unless you specify that during upload. 
 
-If you would like to use a custom login, push your password.txt file to application context directory: data/data/pw.tayyab.flightbookingapp/ folder. 
+If you would like to use a custom login, push your password.txt file to application context directory: data/data/pw.saif.flightbookingapp/ folder.
 
 Otherwise you can login using: 
 	
