@@ -25,5 +25,15 @@ Here is a apk file which is generated:(https://github.com/Saif-Shines/BookFly/bl
 
 Note: Due to time limitations, There in validation for date or no spinner views. One of the Bug observed is if there are more characters given into date field (Strictly YYYY-MM-DD), The app is likely to be crashing.
 
-# Instructions of How to execute the code
+# The Execution Flow
+
+*Initial one View*
+![img_20180705_141102](https://user-images.githubusercontent.com/17451294/42312548-36c1ab52-805e-11e8-877b-3ebf4afa46d6.jpg)
+
+*Fianlly*
+![nw1](https://user-images.githubusercontent.com/17451294/42312717-b0316ae0-805e-11e8-8581-3e1e8727d070.jpg)
+
+
+![nw2](https://user-images.githubusercontent.com/17451294/42312793-d5d1b5e8-805e-11e8-9b5f-f3ee6b33d05f.jpg)
+
 
