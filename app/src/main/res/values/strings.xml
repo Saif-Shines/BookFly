@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flight Booking App</string>
+    <string name="app_name">BookFly</string>
     <string name="username_text_view">Username:</string>
     <string name="password_text_view">Password:</string>
     <string name="login_button">Login!</string>
