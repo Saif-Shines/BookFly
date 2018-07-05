@@ -116,7 +116,7 @@ public class Admin extends User {
      *  origin is the original city that a Flight leaves from.
      *  destination is the original city that a Flight arrives at.
      *  d is the total cost of the Flight
-     * @throws FlightAlreadyExistsException is an exception that handles when
+     * we might have FlightAlreadyExistsException is an exception that handles when
      * a flight is entered with an flight number that has already been used.
      */
     public static void enterFlightInfo(

@@ -278,7 +278,7 @@ public class Database implements Serializable{
     
     /**
      * Writes to the database file.
-     * @throws IOException
+     * we might have IOException
      */
     public void saveToFile() throws IOException {
         SerializeDatabase.saveToFile();
@@ -286,8 +286,8 @@ public class Database implements Serializable{
 
     /**
      * Reads the database file.
-     * @throws IOException
-     * @throws ClassNotFoundException
+     * we might have IOException
+     * we might have ClassNotFoundException
      */
     public void readFromFile() throws IOException,
             ClassNotFoundException {

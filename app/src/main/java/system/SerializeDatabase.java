@@ -20,7 +20,7 @@ public class SerializeDatabase {
 
     /**
      * Writes to the database file.
-     * @throws IOException
+     * we might have IOException
      */
     public static void saveToFile() throws IOException {
         try {
@@ -43,8 +43,8 @@ public class SerializeDatabase {
 
     /**
      * Reads the database file.
-     * @throws IOException
-     * @throws ClassNotFoundException
+     * we might have IOException
+     * we might have ClassNotFoundException
      */
     public static void readFromFile() throws IOException,
             ClassNotFoundException {
